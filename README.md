@@ -82,7 +82,6 @@ void draw() {
   x = x + 1; // Moves the circle across the screen
 }
 ```
----
 
 ## Week 9: March 4 - March 10
 
@@ -99,7 +98,6 @@ This week, I focused on design patterns, which provide reusable solutions for co
    - Structural Patterns – Define relationships between objects.
    - Behavioral Patterns – Manage communication between objects.
 
----
 
 ## Research on Four Key Design Patterns
 
@@ -138,7 +136,6 @@ const instance2 = new Singleton();
 
 console.log(instance1 === instance2); // Output: true (same instance)
 ```
----
 
 ## Week 10: March 11 - March 17
 
