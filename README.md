@@ -10,8 +10,6 @@ Key insights from the update:
 - Understanding functional user requirements ensures that software development is aligned with user needs.
 - We will work on documenting coding practices, maintaining project organization, and implementing design patterns in our development process.
 
----
-
 ### User Stories & Functional User Requirements
 User stories provide a way to document software requirements from a user’s perspective. They are useful for:
 1. **Understanding how a user interacts with a system**.
@@ -36,8 +34,6 @@ User stories provide a way to document software requirements from a user’s per
 - Writing user stories helped me break down a feature into actionable and understandable parts.
 - Acceptance criteria provide a technical foundation for developers to implement the feature correctly.
 - This activity made me think like an end-user**, which is crucial for **user-centered design.
-
----
 
 ### Research on a New Programming Language: Processing
 
@@ -86,6 +82,7 @@ void draw() {
   x = x + 1; // Moves the circle across the screen
 }
 ```
+---
 
 ## Week 9: March 4 - March 10
 
@@ -141,6 +138,7 @@ const instance2 = new Singleton();
 
 console.log(instance1 === instance2); // Output: true (same instance)
 ```
+---
 
 ## Week 10: March 11 - March 17
 
@@ -159,8 +157,6 @@ Understanding these patterns is essential for working with frameworks such as Re
 - MV patterns improve maintainability by separating data management, presentation, and logic.
 - They provide a blueprint for structuring applications, making them scalable and modular.
 - Different patterns are used depending on the framework and platform.
-
----
 
 ## Model-View-Controller (MVC)
 MVC is a software design pattern that divides an application into three interconnected components:
