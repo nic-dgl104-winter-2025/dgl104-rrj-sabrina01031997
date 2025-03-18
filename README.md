@@ -215,7 +215,6 @@ This week, I learned about Object-Oriented Programming (OOP). OOP is a way of wr
 3. **Inheritance** – Making new classes from existing ones so they don’t need to repeat code.
 4. **Polymorphism** – Using one method in different ways for different objects.
 
----
 
 ## Understanding OOP with Examples
 
@@ -244,8 +243,6 @@ class BankAccount {
 **Why is this useful?**
 - Prevents accidental changes to important data.
 - Keeps the code more secure and organized.
-
----
 
 ### 2. Abstraction - Hiding Details
 Abstraction means hiding complicated parts of the code and only showing what is needed.
@@ -279,8 +276,6 @@ public class Main {
 - Hides unnecessary details from the user.
 - Makes the code simpler and easier to use.
 
----
-
 ### 3. Inheritance - Reusing Code
 Inheritance allows a new class to use the properties and methods of an existing class. This helps avoid writing the same code again and again.
 
@@ -311,8 +306,6 @@ public class Main {
 - Reduces duplication – We don’t have to write the same code again.
 - Makes it easy to update the program – If we change the parent class, all child classes get updated too.
 
----
-
 ### 4. Polymorphism - One Method, Many Uses
 Polymorphism allows one method to work differently depending on the object.
 
@@ -342,8 +335,6 @@ public class Main {
 - Makes the code more flexible.
 - Allows different objects to use the same method in their own way.
 
----
-
 ## Applying OOP to Our Group Project
 For our group project, we will use OOP concepts like:
 
@@ -354,15 +345,12 @@ For our group project, we will use OOP concepts like:
 
 This will help keep our project organized and easy to update.
 
----
 
 ## References
 - Oracle. (2024). Object-Oriented Programming Concepts. Retrieved from https://docs.oracle.com/javase/tutorial/java/concepts/
 - W3Schools. (2024). Java OOP. Retrieved from https://www.w3schools.com/java/java_oop.asp
 - The Pragmatic Programmers. (2024). The DRY Principle. Retrieved from https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
 - GitHub. (2024). How to Contribute to Open Source. Retrieved from https://opensource.guide/how-to-contribute/
-
----
 
 
 
