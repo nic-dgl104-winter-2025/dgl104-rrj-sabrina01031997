@@ -201,7 +201,168 @@ const model = new Model();
 const view = new View();
 const controller = new Controller(model, view);
 
-controller.updateView();
+controller.updateView()
+```
+
+## Week 11: March 18 - March 24
+
+### Lecture: Learning About Object-Oriented Programming (OOP)
+This week, I learned about Object-Oriented Programming (OOP). OOP is a way of writing code that organizes everything into objects, making it easier to reuse, modify, and maintain code.
+
+### Four Main Principles of OOP:
+1. **Encapsulation** – Hiding data inside an object and allowing access only through methods.
+2. **Abstraction** – Showing only important details and hiding complex code.
+3. **Inheritance** – Making new classes from existing ones so they don’t need to repeat code.
+4. **Polymorphism** – Using one method in different ways for different objects.
+
+---
+
+## Understanding OOP with Examples
+
+### 1. Encapsulation - Protecting Data
+Encapsulation means keeping data private inside an object and allowing access only through special methods.
+
+#### Example in Java:
+```java
+class BankAccount {
+    private double balance;
+
+    public BankAccount(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return balance;  // Getting balance safely
+    }
+
+    public void deposit(double amount) {
+        if (amount > 0) balance += amount;
+    }
+}
+```
+
+**Why is this useful?**
+- Prevents accidental changes to important data.
+- Keeps the code more secure and organized.
+
+---
+
+### 2. Abstraction - Hiding Details
+Abstraction means hiding complicated parts of the code and only showing what is needed.
+
+#### Example in Java:
+```java
+abstract class Animal {
+    abstract void makeSound();  // Abstract method, must be defined in child classes
+
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound();  // Outputs: Woof! Woof!
+        myDog.sleep();       // Outputs: Sleeping...
+    }
+}
+```
+
+**Why is this useful?**
+- Hides unnecessary details from the user.
+- Makes the code simpler and easier to use.
+
+---
+
+### 3. Inheritance - Reusing Code
+Inheritance allows a new class to use the properties and methods of an existing class. This helps avoid writing the same code again and again.
+
+#### Example in Java:
+```java
+class Vehicle {
+    String brand = "Toyota";  // Parent class has a brand
+
+    void honk() {
+        System.out.println("Beep! Beep!");
+    }
+}
+
+class Car extends Vehicle {  // Child class gets the properties of Vehicle
+    String model = "Camry";
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.honk();  // Uses honk() from Vehicle class
+        System.out.println("Brand: " + myCar.brand + ", Model: " + myCar.model);
+    }
+}
+```
+
+**Why is this useful?**
+- Reduces duplication – We don’t have to write the same code again.
+- Makes it easy to update the program – If we change the parent class, all child classes get updated too.
+
+---
+
+### 4. Polymorphism - One Method, Many Uses
+Polymorphism allows one method to work differently depending on the object.
+
+#### Example in Java:
+```java
+class Animal {
+    void makeSound() {
+        System.out.println("Some generic animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Dog();  
+        myAnimal.makeSound();  // Calls Dog's makeSound() method
+    }
+}
+```
+
+**Why is this useful?**
+- Makes the code more flexible.
+- Allows different objects to use the same method in their own way.
+
+---
+
+## Applying OOP to Our Group Project
+For our group project, we will use OOP concepts like:
+
+- **Encapsulation** – Keeping user data private and allowing controlled access.
+- **Abstraction** – Hiding complex logic behind simple methods.
+- **Inheritance** – Using a parent class for different user roles.
+- **Polymorphism** – Having different payment methods but using the same function to process them.
+
+This will help keep our project organized and easy to update.
+
+---
+
+## References
+- Oracle. (2024). Object-Oriented Programming Concepts. Retrieved from https://docs.oracle.com/javase/tutorial/java/concepts/
+- W3Schools. (2024). Java OOP. Retrieved from https://www.w3schools.com/java/java_oop.asp
+- The Pragmatic Programmers. (2024). The DRY Principle. Retrieved from https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
+- GitHub. (2024). How to Contribute to Open Source. Retrieved from https://opensource.guide/how-to-contribute/
+
+---
 
 
 
